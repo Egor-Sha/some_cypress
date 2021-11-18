@@ -1,9 +1,34 @@
 /// <reference types="Cypress" />
 
-it.only('using get find eq', () => {
-    cy.visit('https://next.privat24.ua/deposit/open')
-    cy.get('tbody').find('td').find('div').find('button').eq('0')
-});
+it('', () => {
+    cy.visit('https://next.privat24.ua/mobile?lang=en')
+    cy.contains('Sign in');
+})
+
+it('', () => {
+    cy.visit('https://next.privat24.ua/mobile?lang=en')
+    cy.contains('div','Sign in');
+})
+
+it('', () => {
+    cy.visit('https://next.privat24.ua/mobile?lang=en')
+    cy.contains('ADD TO CART',{matchCase: false});
+})
+
+it.only('', () => {
+    cy.visit('https://next.privat24.ua/mobile?lang=en')
+    cy.get('footer').contains('Go to old version');
+})
+
+
+
+// it.only('using get find eq', () => {
+//     cy.visit('https://next.privat24.ua/deposit/open')
+//     cy.get('tbody').find('td').find('div').find('button').eq('0')
+// });
+
+//hello git
+
 
 //проверить цепочку селекторов
 // it.only('using get find eq', () => {
