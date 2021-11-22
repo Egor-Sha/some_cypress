@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 
+<<<<<<< Updated upstream
 
 it('should', ()=> {
     cy.visit('https://next.privat24.ua/mobile?lang=en')
@@ -30,3 +31,39 @@ it.only('check url', ()=> {
     cy.url()
         .should('eq','https://next.privat24.ua/mobile?lang=en')
 })
+=======
+it('api simple example', ()=> {
+
+const headersData = {
+    cookie:
+    ''
+}
+
+cy.request({
+    method: 'POST',
+}).then((response) => {
+    expect(response).to.have.property('status').to.equal(200)
+
+    console.log(response);
+});
+});
+
+
+
+
+// it('api simple example', ()=> {
+
+//     const headersData = {
+//         cookie:
+//         ''
+//     }
+    
+//     cy.request({
+//         method: 'POST',
+//     }).then((response) => {
+//         expect(response).to.have.property('status').to.equal(200)
+    
+//         console.log(response);
+//     });
+//     });
+>>>>>>> Stashed changes
