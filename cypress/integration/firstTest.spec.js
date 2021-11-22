@@ -1,3 +1,9 @@
 /// <reference types="Cypress" />
 
-//empty master branch
+it('api get simple', ()=> {
+    cy.request('https://next.privat24.ua/')
+    .then((response)=>{
+        console.log(response);
+
+    })
+})
